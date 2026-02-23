@@ -1,12 +1,22 @@
 # IRLS Algorithm [Advanced Machine Learning]
 
-Implementation of Iterative Reweighted Least Squares (IRLS) optimization algorithm for Logistic Regression from scratch. 
+Implementation of Logistic Regression from scratch using the Iterative Reweighted Least Squares (IRLS) optimization algorithm.
 
-This project compares a custom implementation with standard ML classifiers on synthetic and real-world datasets.
+This project evaluates the custom implementation on both synthetic and real-world datasets and compares its performance against standard machine learning classifiers.
 
 ### Experiments:
 1. Synthetic Data: Linearly separable dataset & Non-linear dataset. Testing a model with and without interaction terms
-Key observation: Interaction terms improve performance on non-linear synthetic data.
+
 2. Real-World Datasets
   2.1 South African Heart Disease (SAheart)
+   
   2.2 Water Potability Dataset
+
+| Dataset          | Custom IRLS (Accuracy) | sklearn Logistic Regression (Accuracy) |
+| ---------------- | ---------------------- | -------------------------------------- |
+| SAheart          | 46.2%                  | 78.5%                                  |
+| Water Potability | 53.3%                  | 59.6%                                  |
+
+
+Technologies Used: Python, NumPy, pandas, scikit-learn, matplotlib
+
